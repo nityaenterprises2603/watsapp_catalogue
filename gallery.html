@@ -4,6 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Jewellery Image Gallery</title>
+
+  <!-- If your site lives at another repo/path, change this base URL -->
+  <base href="https://nityaenterprises2603.github.io/ecommerce-site/">
+
   <style>
     :root { --bg:#f5f7fa; --ink:#222; --card:#fff; --accent:#14532d; }
     body { margin:0; font-family:system-ui, Arial, sans-serif; background:var(--bg); color:var(--ink); }
@@ -26,9 +30,9 @@
 <!-- ====== CATEGORY: NECKLACES / CHOKERS ====== -->
 <h2>Necklaces / Chokers — Design 650</h2>
 <div class="grid">
-  <!-- Add/remove <a><img src="…"></a> lines as needed. Files live in /images/ -->
+  <!-- Make sure these files exist in /images/ with the exact names -->
   <a class="card" href="images/NEC-650-01.jpg" target="_blank">
-    <img loading="lazy" src="assets/Necklaces/N-1.jpeg" alt="Oxidized Choker Necklace Set — 01">
+    <img loading="lazy" src="images/NEC-650-01.jpg" alt="Oxidized Choker Necklace Set — 01">
     <div class="caption">Design 650 — 01</div>
   </a>
   <a class="card" href="images/NEC-650-02.jpg" target="_blank">
@@ -68,7 +72,6 @@
 <!-- ====== MORE CATEGORIES (examples to copy) ====== -->
 <h2>Earrings</h2>
 <div class="grid">
-  <!-- Duplicate these lines and change file names -->
   <a class="card" href="images/EAR-001.jpg" target="_blank">
     <img loading="lazy" src="images/EAR-001.jpg" alt="Jhumka Earrings — 001">
     <div class="caption">Jhumka — 001</div>
@@ -101,8 +104,8 @@
 
 <footer>
   Upload images to <code>/images/</code> in this repo.  
-  Prefer absolute URLs? Use: <code>https://raw.githubusercontent.com/&lt;USER&gt;/&lt;REPO&gt;/main/images/FILE.jpg</code>
+  Prefer raw links? Replace <code>href/src</code> with
+  <code>https://raw.githubusercontent.com/&lt;USER&gt;/&lt;REPO&gt;/main/images/FILE.jpg</code>
 </footer>
 </body>
 </html>
-
